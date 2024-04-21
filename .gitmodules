@@ -1,0 +1,9 @@
+[submodule "include/silver-bun"]
+	path = include/silver-bun
+	url = https://github.com/IcePixelx/silver-bun.git
+[submodule "submodules/minhook"]
+	path = submodules/minhook
+	url = https://github.com/TsudaKageyu/minhook.git
+[submodule "include/minhook"]
+	path = include/minhook
+	url = https://github.com/TsudaKageyu/minhook.git
