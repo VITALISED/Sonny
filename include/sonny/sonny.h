@@ -103,14 +103,14 @@
 #define _SNY_METHOD_IMPL(name, tuple, amount) reinterpret_cast<name##_::FnPtrType>(name##_::muiPtr)(_SNY_PASS_ARGS(amount))
 
 // define a method
-#define DECLARE_METHOD_IMPL(name, tuple, amount) \
-    name##_::ReturnType name(_SNY_APPLY_ARGS_##amount(tuple)) { return _SNY_METHOD_IMPL(name, tuple, amount); }
+#define DECLARE_METHOD_IMPL(name, amount) \
+    name##_::ReturnType name(_SNY_APPLY_ARGS_##amount(name##_::ArgsTuple)) { return _SNY_METHOD_IMPL(name, name##_::ArgsTuple, amount); }
 // define a void method (cannot return)
-#define DECLARE_METHOD_IMPL_V(name, tuple, amount) \
-    name##_::ReturnType name(_SNY_APPLY_ARGS_##amount(tuple)) { _SNY_METHOD_IMPL(name, tuple, amount); }
-// hook a method and define it
+#define DECLARE_METHOD_IMPL_V(name, amount) \
+    name##_::ReturnType name(_SNY_APPLY_ARGS_##amount(name##_::ArgsTuple)) { _SNY_METHOD_IMPL(name, name##_::ArgsTuple, amount); }
+// hook a method
 #define DECLARE_METHOD_HOOK(name, callback) \
-// hook a method but with a callback queue and define it
+// hook a method but with a callback queue
 #define DECLARE_METHOD_HOOK_QUEUE()
 
 
