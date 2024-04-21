@@ -16,7 +16,10 @@
 #error "Unsupported hook library"
 #endif
 
-#define DECLARE_METHOD_DETAIL()
+#define DECLARE_METHOD_DETAIL(address, type, name) \
+    struct name##_ : public Sonny::MethodDetail<type, address, #name> \
+    {}; \
+
 #define DECLARE_METHOD_IMPL()
 #define DECLARE_METHOD_IMPL_NOHOOK()
 
@@ -66,10 +69,9 @@ public:
     template <typename R, typename... Args>
     class FunctionTraits<std::function<R(Args...)>>
     {
+      public:
         using Type = R;
         using ArgsTuple = std::tuple<Args...>;
-
-        friend class MethodDetail;
     };
 
     template <typename Ret, typename... Args>
@@ -89,26 +91,26 @@ public:
     {
     };
 
-    template <typename Fn, const char *Sig, const char *Name>
+    template <typename Fn>
     class MethodDetail
     {
-        using ReturnType = typename FunctionTraits<Fn>::Type;
-        using ArgsTuple = typename FunctionTraits<Fn>::ArgsTuple;
+        using ReturnType = typename FunctionTraits<std::function<Fn>>::Type;
+        using ArgsTuple = typename FunctionTraits<std::function<Fn>>::ArgsTuple;
 
         struct QueueMember
         {
-            Fn mCallback;
+            std::function<Fn> mCallback;
             // might rip this out for a priority system later, just a safeguard for undefined behaviour
             bool mbNeedsReturn;
         };
         // ideally create everything on the stack as static, there should only be 1 instance of this class per method
 
-        static constexpr const char *mpacSignature = Sig;
-        static constexpr const char *mpacName = Name;
+        static constexpr const char *mpacSignature = "";
+        static constexpr const char *mpacName = "";
         static std::deque<QueueMember *> mFnQueue;
         static bool mbFinalSet;
-        static Fn mFn;
-        static Detour<ReturnType, ArgsTuple> mDetour;
+        static std::function<Fn> mFn;
+        //static Detour<ReturnType, ArgsTuple> mDetour;
     };
 
     class SetupFunction
