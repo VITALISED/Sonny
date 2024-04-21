@@ -2,8 +2,7 @@
 
 DECLARE_CALLBACK_SETUP()
 
-void Fish()
-{};
+DECLARE_METHOD_HOOK(cGcApplication::Update, 1, [](cGcApplication* self) -> void {})
 
 
 BOOL APIENTRY DllMain(HMODULE hModule,
