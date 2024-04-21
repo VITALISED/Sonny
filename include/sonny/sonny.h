@@ -17,8 +17,11 @@
 #endif
 
 #define DECLARE_METHOD_DETAIL(address, type, name) \
-    struct name##_ : public Sonny::MethodDetail<type, address, #name> \
-    {}; \
+    struct name##_ : public Sonny::MethodDetail<type> \
+    {\
+        static constexpr const char *mpacSignature = address; \
+        static constexpr const char *mpacName = #name; \
+    };
 
 #define DECLARE_METHOD_IMPL()
 #define DECLARE_METHOD_IMPL_NOHOOK()
