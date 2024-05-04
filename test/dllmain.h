@@ -1,11 +1,13 @@
-#include <sonny/sonny.h>
 #include <Windows.h>
+#include <sonny/sonny.h>
 
 void Fish();
 
 class Test
 {
-    DECLARE_METHOD_DETAIL("aa bb cc", void(Test*), Fun);
+public:
+#define Test__Fun_ARGS 1
+    DECLARE_METHOD_DETAIL("aa bb cc", void(Test *), Fun);
 
     void Fun();
 };

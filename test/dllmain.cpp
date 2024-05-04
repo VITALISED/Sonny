@@ -2,13 +2,11 @@
 
 DECLARE_CALLBACK_SETUP()
 
-DECLARE_METHOD_HOOK(cGcApplication::Update, 1, [](cGcApplication* self) -> void {})
-
+DECLARE_METHOD_HOOK(Test::Fun, 1, [](Test *self) -> void {});
 
 BOOL APIENTRY DllMain(HMODULE hModule,
-                      DWORD  ul_reason_for_call,
-                      LPVOID lpReserved
-                     )
+                      DWORD ul_reason_for_call,
+                      LPVOID lpReserved)
 {
     DisableThreadLibraryCalls(hModule);
 
