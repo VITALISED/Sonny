@@ -16,7 +16,7 @@
 #error "Unsupported hook library"
 #endif
 
-// supports up to 16 args in a call, can be more but i fucking do not care
+// if you use this code may god have mercy on your soul
 #pragma region Argument Iteration Helpers
 
 #define _SNY_ARG_0(tuple)
@@ -130,7 +130,7 @@
 #define _SNY_APPLY_ARGS_42(tuple) _SNY_ARG_1(tuple) arg1, _SNY_ARG_2(tuple) arg2, _SNY_ARG_3(tuple) arg3, _SNY_ARG_4(tuple) arg4, _SNY_ARG_5(tuple) arg5, _SNY_ARG_6(tuple) arg6, _SNY_ARG_7(tuple) arg7, _SNY_ARG_8(tuple) arg8, _SNY_ARG_9(tuple) arg9, _SNY_ARG_10(tuple) arg10, _SNY_ARG_11(tuple) arg11, _SNY_ARG_12(tuple) arg12, _SNY_ARG_13(tuple) arg13, _SNY_ARG_14(tuple) arg14, _SNY_ARG_15(tuple) arg15, _SNY_ARG_16(tuple) arg16, _SNY_ARG_17(tuple) arg17, _SNY_ARG_18(tuple) arg18, _SNY_ARG_19(tuple) arg19, _SNY_ARG_20(tuple) arg20, _SNY_ARG_21(tuple) arg21, _SNY_ARG_22(tuple) arg22, _SNY_ARG_23(tuple) arg23, _SNY_ARG_24(tuple) arg24, _SNY_ARG_25(tuple) arg25, _SNY_ARG_26(tuple) arg26, _SNY_ARG_27(tuple) arg27, _SNY_ARG_28(tuple) arg28, _SNY_ARG_29(tuple) arg29, _SNY_ARG_30(tuple) arg30, _SNY_ARG_31(tuple) arg31, _SNY_ARG_32(tuple) arg32, _SNY_ARG_33(tuple) arg33, _SNY_ARG_34(tuple) arg34, _SNY_ARG_35(tuple) arg35, _SNY_ARG_36(tuple) arg36, _SNY_ARG_37(tuple) arg37, _SNY_ARG_38(tuple) arg38, _SNY_ARG_39(tuple) arg39, _SNY_ARG_40(tuple) arg40, _SNY_ARG_41(tuple) arg41, _SNY_ARG_42(tuple) arg42
 #define _SNY_APPLY_ARGS_43(tuple) _SNY_ARG_1(tuple) arg1, _SNY_ARG_2(tuple) arg2, _SNY_ARG_3(tuple) arg3, _SNY_ARG_4(tuple) arg4, _SNY_ARG_5(tuple) arg5, _SNY_ARG_6(tuple) arg6, _SNY_ARG_7(tuple) arg7, _SNY_ARG_8(tuple) arg8, _SNY_ARG_9(tuple) arg9, _SNY_ARG_10(tuple) arg10, _SNY_ARG_11(tuple) arg11, _SNY_ARG_12(tuple) arg12, _SNY_ARG_13(tuple) arg13, _SNY_ARG_14(tuple) arg14, _SNY_ARG_15(tuple) arg15, _SNY_ARG_16(tuple) arg16, _SNY_ARG_17(tuple) arg17, _SNY_ARG_18(tuple) arg18, _SNY_ARG_19(tuple) arg19, _SNY_ARG_20(tuple) arg20, _SNY_ARG_21(tuple) arg21, _SNY_ARG_22(tuple) arg22, _SNY_ARG_23(tuple) arg23, _SNY_ARG_24(tuple) arg24, _SNY_ARG_25(tuple) arg25, _SNY_ARG_26(tuple) arg26, _SNY_ARG_27(tuple) arg27, _SNY_ARG_28(tuple) arg28, _SNY_ARG_29(tuple) arg29, _SNY_ARG_30(tuple) arg30, _SNY_ARG_31(tuple) arg31, _SNY_ARG_32(tuple) arg32, _SNY_ARG_33(tuple) arg33, _SNY_ARG_34(tuple) arg34, _SNY_ARG_35(tuple) arg35, _SNY_ARG_36(tuple) arg36, _SNY_ARG_37(tuple) arg37, _SNY_ARG_38(tuple) arg38, _SNY_ARG_39(tuple) arg39, _SNY_ARG_40(tuple) arg40, _SNY_ARG_41(tuple) arg41, _SNY_ARG_42(tuple) arg42, _SNY_ARG_43(tuple) arg43
 #define _SNY_APPLY_ARGS_44(tuple) _SNY_ARG_1(tuple) arg1, _SNY_ARG_2(tuple) arg2, _SNY_ARG_3(tuple) arg3, _SNY_ARG_4(tuple) arg4, _SNY_ARG_5(tuple) arg5, _SNY_ARG_6(tuple) arg6, _SNY_ARG_7(tuple) arg7, _SNY_ARG_8(tuple) arg8, _SNY_ARG_9(tuple) arg9, _SNY_ARG_10(tuple) arg10, _SNY_ARG_11(tuple) arg11, _SNY_ARG_12(tuple) arg12, _SNY_ARG_13(tuple) arg13, _SNY_ARG_14(tuple) arg14, _SNY_ARG_15(tuple) arg15, _SNY_ARG_16(tuple) arg16, _SNY_ARG_17(tuple) arg17, _SNY_ARG_18(tuple) arg18, _SNY_ARG_19(tuple) arg19, _SNY_ARG_20(tuple) arg20, _SNY_ARG_21(tuple) arg21, _SNY_ARG_22(tuple) arg22, _SNY_ARG_23(tuple) arg23, _SNY_ARG_24(tuple) arg24, _SNY_ARG_25(tuple) arg25, _SNY_ARG_26(tuple) arg26, _SNY_ARG_27(tuple) arg27, _SNY_ARG_28(tuple) arg28, _SNY_ARG_29(tuple) arg29, _SNY_ARG_30(tuple) arg30, _SNY_ARG_31(tuple) arg31, _SNY_ARG_32(tuple) arg32, _SNY_ARG_33(tuple) arg33, _SNY_ARG_34(tuple) arg34, _SNY_ARG_35(tuple) arg35, _SNY_ARG_36(tuple) arg36, _SNY_ARG_37(tuple) arg37, _SNY_ARG_38(tuple) arg38, _SNY_ARG_39(tuple) arg39, _SNY_ARG_40(tuple) arg40, _SNY_ARG_41(tuple) arg41, _SNY_ARG_42(tuple) arg42, _SNY_ARG_43(tuple) arg43, _SNY_ARG_44(tuple) arg44
-#define _SNY_APPLY_ARGS_45(tuple) _SNY_ARG_1(tuple) arg1, _SNY_ARG_2(tuple) arg2, _SNY_ARG_3(tuple) arg3, _SNY_ARG_4(tuple) arg4, _SNY_ARG_5(tuple) arg5, _SNY_ARG_6(tuple) arg6, _SNY_ARG_7(tuple) arg7, _SNY_ARG_8(tuple) arg8, _SNY_ARG_9(tuple) arg9, _SNY_ARG_10(tuple) arg10, _SNY_ARG_11(tuple) arg11, _SNY_ARG_12(tuple) arg12, _SNY_ARG_13(tuple) arg13, _SNY_ARG_14(tuple) arg14, _SNY_ARG_15(tuple) arg15, _SNY_ARG_16(tuple) arg16, _SNY_ARG_17(tuple) arg17, _SNY_ARG_18(tuple) arg18, _SNY_ARG_19(tuple) arg19, _SNY_ARG_20(tuple) arg20, _SNY_ARG_21(tuple) arg21, _SNY_ARG_22(tuple) arg22, _SNY_ARG_23(tuple) arg23, _SNY_ARG_24(tuple) arg24, _SNY_ARG_25(tuple) arg25, _SNY_ARG_26(tuple) arg26, _SNY_ARG_27(tuple) arg27, _SNY_ARG_28(tuple) arg28, _SNY_ARG_29(tuple) arg29, _SNY_ARG_30(tuple) arg30, _SNY_ARG_31(tuple) arg31, _SNY_ARG_32(tuple) arg32, _SNY_ARG_33(tuple) arg33, _SNY_ARG_34(tuple) arg34, _SNY_ARG_35(tuple) arg35, _SNY_ARG_36(tuple) arg36, _SNY_ARG_37(tuple) arg37, _SNY_ARG_38(tuple) arg38, _SNY_ARG_39(tuple) arg39, _SNY_ARG_40(tuple) arg40, _SNY_ARG_41(tuple) arg41, _SNY_ARG_42(tuple) arg42, _SNY_ARG_43(tuple) arg43, _SNY_ARG_44(tuple) arg44, _SNY_ARG_45(tuple) arg45, 
+#define _SNY_APPLY_ARGS_45(tuple) _SNY_ARG_1(tuple) arg1, _SNY_ARG_2(tuple) arg2, _SNY_ARG_3(tuple) arg3, _SNY_ARG_4(tuple) arg4, _SNY_ARG_5(tuple) arg5, _SNY_ARG_6(tuple) arg6, _SNY_ARG_7(tuple) arg7, _SNY_ARG_8(tuple) arg8, _SNY_ARG_9(tuple) arg9, _SNY_ARG_10(tuple) arg10, _SNY_ARG_11(tuple) arg11, _SNY_ARG_12(tuple) arg12, _SNY_ARG_13(tuple) arg13, _SNY_ARG_14(tuple) arg14, _SNY_ARG_15(tuple) arg15, _SNY_ARG_16(tuple) arg16, _SNY_ARG_17(tuple) arg17, _SNY_ARG_18(tuple) arg18, _SNY_ARG_19(tuple) arg19, _SNY_ARG_20(tuple) arg20, _SNY_ARG_21(tuple) arg21, _SNY_ARG_22(tuple) arg22, _SNY_ARG_23(tuple) arg23, _SNY_ARG_24(tuple) arg24, _SNY_ARG_25(tuple) arg25, _SNY_ARG_26(tuple) arg26, _SNY_ARG_27(tuple) arg27, _SNY_ARG_28(tuple) arg28, _SNY_ARG_29(tuple) arg29, _SNY_ARG_30(tuple) arg30, _SNY_ARG_31(tuple) arg31, _SNY_ARG_32(tuple) arg32, _SNY_ARG_33(tuple) arg33, _SNY_ARG_34(tuple) arg34, _SNY_ARG_35(tuple) arg35, _SNY_ARG_36(tuple) arg36, _SNY_ARG_37(tuple) arg37, _SNY_ARG_38(tuple) arg38, _SNY_ARG_39(tuple) arg39, _SNY_ARG_40(tuple) arg40, _SNY_ARG_41(tuple) arg41, _SNY_ARG_42(tuple) arg42, _SNY_ARG_43(tuple) arg43, _SNY_ARG_44(tuple) arg44, _SNY_ARG_45(tuple) arg45,
 #define _SNY_APPLY_ARGS_46(tuple) _SNY_ARG_1(tuple) arg1, _SNY_ARG_2(tuple) arg2, _SNY_ARG_3(tuple) arg3, _SNY_ARG_4(tuple) arg4, _SNY_ARG_5(tuple) arg5, _SNY_ARG_6(tuple) arg6, _SNY_ARG_7(tuple) arg7, _SNY_ARG_8(tuple) arg8, _SNY_ARG_9(tuple) arg9, _SNY_ARG_10(tuple) arg10, _SNY_ARG_11(tuple) arg11, _SNY_ARG_12(tuple) arg12, _SNY_ARG_13(tuple) arg13, _SNY_ARG_14(tuple) arg14, _SNY_ARG_15(tuple) arg15, _SNY_ARG_16(tuple) arg16, _SNY_ARG_17(tuple) arg17, _SNY_ARG_18(tuple) arg18, _SNY_ARG_19(tuple) arg19, _SNY_ARG_20(tuple) arg20, _SNY_ARG_21(tuple) arg21, _SNY_ARG_22(tuple) arg22, _SNY_ARG_23(tuple) arg23, _SNY_ARG_24(tuple) arg24, _SNY_ARG_25(tuple) arg25, _SNY_ARG_26(tuple) arg26, _SNY_ARG_27(tuple) arg27, _SNY_ARG_28(tuple) arg28, _SNY_ARG_29(tuple) arg29, _SNY_ARG_30(tuple) arg30, _SNY_ARG_31(tuple) arg31, _SNY_ARG_32(tuple) arg32, _SNY_ARG_33(tuple) arg33, _SNY_ARG_34(tuple) arg34, _SNY_ARG_35(tuple) arg35, _SNY_ARG_36(tuple) arg36, _SNY_ARG_37(tuple) arg37, _SNY_ARG_38(tuple) arg38, _SNY_ARG_39(tuple) arg39, _SNY_ARG_40(tuple) arg40, _SNY_ARG_41(tuple) arg41, _SNY_ARG_42(tuple) arg42, _SNY_ARG_43(tuple) arg43, _SNY_ARG_44(tuple) arg44, _SNY_ARG_45(tuple) arg45, _SNY_ARG_46(tuple) arg46,
 #define _SNY_APPLY_ARGS_47(tuple) _SNY_ARG_1(tuple) arg1, _SNY_ARG_2(tuple) arg2, _SNY_ARG_3(tuple) arg3, _SNY_ARG_4(tuple) arg4, _SNY_ARG_5(tuple) arg5, _SNY_ARG_6(tuple) arg6, _SNY_ARG_7(tuple) arg7, _SNY_ARG_8(tuple) arg8, _SNY_ARG_9(tuple) arg9, _SNY_ARG_10(tuple) arg10, _SNY_ARG_11(tuple) arg11, _SNY_ARG_12(tuple) arg12, _SNY_ARG_13(tuple) arg13, _SNY_ARG_14(tuple) arg14, _SNY_ARG_15(tuple) arg15, _SNY_ARG_16(tuple) arg16, _SNY_ARG_17(tuple) arg17, _SNY_ARG_18(tuple) arg18, _SNY_ARG_19(tuple) arg19, _SNY_ARG_20(tuple) arg20, _SNY_ARG_21(tuple) arg21, _SNY_ARG_22(tuple) arg22, _SNY_ARG_23(tuple) arg23, _SNY_ARG_24(tuple) arg24, _SNY_ARG_25(tuple) arg25, _SNY_ARG_26(tuple) arg26, _SNY_ARG_27(tuple) arg27, _SNY_ARG_28(tuple) arg28, _SNY_ARG_29(tuple) arg29, _SNY_ARG_30(tuple) arg30, _SNY_ARG_31(tuple) arg31, _SNY_ARG_32(tuple) arg32, _SNY_ARG_33(tuple) arg33, _SNY_ARG_34(tuple) arg34, _SNY_ARG_35(tuple) arg35, _SNY_ARG_36(tuple) arg36, _SNY_ARG_37(tuple) arg37, _SNY_ARG_38(tuple) arg38, _SNY_ARG_39(tuple) arg39, _SNY_ARG_40(tuple) arg40, _SNY_ARG_41(tuple) arg41, _SNY_ARG_42(tuple) arg42, _SNY_ARG_43(tuple) arg43, _SNY_ARG_44(tuple) arg44, _SNY_ARG_45(tuple) arg45, _SNY_ARG_46(tuple) arg46, _SNY_ARG_47(tuple) arg47,
 #define _SNY_APPLY_ARGS_48(tuple) _SNY_ARG_1(tuple) arg1, _SNY_ARG_2(tuple) arg2, _SNY_ARG_3(tuple) arg3, _SNY_ARG_4(tuple) arg4, _SNY_ARG_5(tuple) arg5, _SNY_ARG_6(tuple) arg6, _SNY_ARG_7(tuple) arg7, _SNY_ARG_8(tuple) arg8, _SNY_ARG_9(tuple) arg9, _SNY_ARG_10(tuple) arg10, _SNY_ARG_11(tuple) arg11, _SNY_ARG_12(tuple) arg12, _SNY_ARG_13(tuple) arg13, _SNY_ARG_14(tuple) arg14, _SNY_ARG_15(tuple) arg15, _SNY_ARG_16(tuple) arg16, _SNY_ARG_17(tuple) arg17, _SNY_ARG_18(tuple) arg18, _SNY_ARG_19(tuple) arg19, _SNY_ARG_20(tuple) arg20, _SNY_ARG_21(tuple) arg21, _SNY_ARG_22(tuple) arg22, _SNY_ARG_23(tuple) arg23, _SNY_ARG_24(tuple) arg24, _SNY_ARG_25(tuple) arg25, _SNY_ARG_26(tuple) arg26, _SNY_ARG_27(tuple) arg27, _SNY_ARG_28(tuple) arg28, _SNY_ARG_29(tuple) arg29, _SNY_ARG_30(tuple) arg30, _SNY_ARG_31(tuple) arg31, _SNY_ARG_32(tuple) arg32, _SNY_ARG_33(tuple) arg33, _SNY_ARG_34(tuple) arg34, _SNY_ARG_35(tuple) arg35, _SNY_ARG_36(tuple) arg36, _SNY_ARG_37(tuple) arg37, _SNY_ARG_38(tuple) arg38, _SNY_ARG_39(tuple) arg39, _SNY_ARG_40(tuple) arg40, _SNY_ARG_41(tuple) arg41, _SNY_ARG_42(tuple) arg42, _SNY_ARG_43(tuple) arg43, _SNY_ARG_44(tuple) arg44, _SNY_ARG_45(tuple) arg45, _SNY_ARG_46(tuple) arg46, _SNY_ARG_47(tuple) arg47, _SNY_ARG_48(tuple) arg48,
@@ -378,21 +378,23 @@
 #define _HOOK_FN_IMPL_QUEUE_V
 
 #define __DECLARE_HOOK_FN__(name, id, amount, inner) \
-    name##_ ::ReturnType id##_det( _SNY_APPLY_ARGS_##amount ( name##_ ::ArgsTuple ) ) { inner }
+    name##_ ::ReturnType id##_det(_SNY_APPLY_ARGS_##amount(name##_ ::ArgsTuple)) { inner }
 #define _DECLARE_HOOK_FN(name, id, amount, callback) __DECLARE_HOOK_FN__(name, id, amount, _HOOK_FN_IMPL(name, callback, amount))
 #define _DECLARE_HOOK_FN_V(name, id, amount, callback) __DECLARE_HOOK_FN__(name, id, amount, _HOOK_FN_IMPL_V(name, callback, amount))
 #define _DECLARE_HOOK_FN_QUEUE(name, id, amount, callback) __DECLARE_HOOK_FN__(name, id, amount, _HOOK_FN_IMPL_QUEUE(name, callback, amount))
 #define _DECLARE_HOOK_FN_QUEUE_V(name, id, amount, callback) __DECLARE_HOOK_FN__(name, id, amount, _HOOK_FN_IMPL_QUEUE_V(name, callback, amount))
 
-// helper since we need to call _SNY_MAKE_UNIQUE to avoid redefinition
-#define _DECLARE_SETUP_FUNCTION(name, module, callback)    \
-    struct name : public Sonny::SetupFunction              \
-    {                                                      \
-        name() : Sonny::SetupFunction(module, callback) {} \
-    };
+#define _SETUP_FUNCTION_IMPL
+#define _DECLARE_SETUP_FUNCTION(name, module, callback)                                  \
+    struct name##_setup : public Sonny::SetupFunction                                    \
+    {                                                                                    \
+        std::function<void()> fn = []() { Sonny::ResolveAddress(name##_::mSignature); }; \
+        name##_setup() : Sonny::SetupFunction(module) {}                                 \
+    } name##_::mpacName##_setup;
+
 #define _DECLARE_HOOK(id, name, amount, callback) \
-    _DECLARE_HOOK_FN(name, id, amount, callback);           \
-    //_DECLARE_SETUP_FUNCTION(id, name##_::mpacModule, _SNY_CONCAT(id, setup)); // fix
+    _DECLARE_HOOK_FN(name, id, amount, callback); \
+    _DECLARE_SETUP_FUNCTION(id, name##_::mpacModule, _SNY_CONCAT(id, setup)); // fix
 
 // cast pointer to the original function type and call it with unpacked arguments from the tuple
 #define _SNY_METHOD_IMPL(name, amount) reinterpret_cast<name##_::FnPtrType>(name##_::muiPtr)(_SNY_PASS_ARGS(amount))
@@ -494,20 +496,26 @@ public:
     class SetupFunction
     {
     public:
-        SetupFunction(const char *module, SetupFnType fn)
+        std::function<void()> fn;
+
+        SetupFunction(const char *module)
         {
             __snycbv__.push_back({module, fn});
         }
-
-        template <typename Fn>
-        static void _BasicSetup(Fn lFn, uintptr_t luiPtr, uintptr_t luiTrampoline)
-        {
-#if SONNY_HOOKLIB == MINHOOK
-            MH_CreateHook(luiPtr, lFn, reinterpret_cast<LPVOID *>(&trampoline));
-#endif
-        }
     };
 
+    template <typename T, typename Detail>
+    static void ResolveAddress(T ptr, Detail &detail)
+    {
+        detail::muiPtr = reinterpret_cast<uintptr_t>(ptr);
+    }
+
+    template <typename Detail>
+    static void ResolveAddress(const char *ptr, Detail &detail)
+    {
+        CModule lModule = CModule(detail::mpacModule);
+        detail::muiPtr = lModule.FindPatternSIMD(ptr).GetPtr();
+    }
 }; // namespace sonny
 
 #endif //_SONNY_H_
